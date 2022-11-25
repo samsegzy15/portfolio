@@ -1,0 +1,288 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+  font-family: monospace;
+  text-decoration: none;
+  
+  
+
+}
+body{
+    overflow-x: hidden;
+}
+.main-width{
+   width: 1280px;
+   max-width: 95%;
+   margin: 0 auto;
+   padding: 0px 20px; 
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    min-width: 100vh;
+    
+}
+.bcd{
+    width: 450px;
+    height: 430px;
+    position: absolute;
+    left: 55%;
+    bottom: 15%;
+    border-radius: 50%;
+    border: 9px solid orange;
+    max-width: 450px;
+    min-width: 30px ;
+    
+    
+    
+}
+
+.bcd:hover{
+    transform: scale(1.1);
+    background: transparent;
+    transition: .4s;
+
+}
+header{
+    padding: 40px 0 30px ;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between ;
+}
+.logo img{
+    height: 55px;
+    width: 55px;
+    background: transparent;
+    border: 2px solid orange;
+    border-radius: 40%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    object-fit: cover;
+
+}
+
+nav .nav-list{
+    list-style: none;
+}
+nav .nav-list li{
+    display: inline-block;
+    padding: 0px 20px ;
+}
+nav .nav-list li a{
+    display: inline-block;
+    color: #eee;
+    margin-left: 55px;
+    font-size: 15px;
+    font-weight: 600;
+}
+nav .nav-list li a:hover{
+    color: orange;
+    transition: .4s;
+    text-decoration: underline;
+    
+}
+nav .nav-list li.btn a{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid orange;
+    padding: 9px 28px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color: orange;
+    font-weight: 500;
+    position: fixed;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+button{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid orange;
+    padding: 9px 28px;
+    border-radius: 30px;
+    line-height: 1.3;
+    color: orange;
+    font-weight: 500;
+}
+nav .nav-list li.btn:hover a{
+    background: orange;
+    color: white;
+    border: 2px solid transparent;
+    transition:.4s ;
+    
+}
+
+button:hover{
+    background: orange;
+    color: white;
+    border: 2px solid transparent;
+    transition:.4s ;
+    cursor: pointer;
+}
+.container{
+    padding-top: 100px;
+}
+.container .hero-text{
+    margin-bottom: 40px;
+}
+.container .hero-text h1{
+    color: rgb(255, 255, 255);
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+    margin: 20px 0px;
+    font-family: calibri;
+}
+span{
+    color: orange;
+    
+}
+.container .hero-text h3{
+    color: #eee;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: monospace;
+    
+
+}
+.container .hero-text p{
+    width: 440px;
+    max-width: 100%;
+    min-width: 50%;
+    color: #eee;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px ;
+    text-align: justify;
+    
+    
+}
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #eee;
+    cursor: pointer;
+    margin-right: 20px;
+    bottom: 20px;
+    padding-top: 30px;
+    margin-right: 8px;
+    width: max-content;
+    padding-bottom: 30px; 
+}
+
+.social a:hover{
+    transform: scale(1.1);
+    background: transparent;
+    transition: .4s;
+
+}
+a .face{
+    position: fixed;
+    margin-top: 50px;
+}
+
+.container .hero-text button{
+    color: #eee;
+    background: orange;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid orange;
+    border-radius: 30px ;
+    cursor: pointer;
+}
+.container .hero-text button:hover{
+    background: transparent;
+    border: 2px solid orange;
+    color: orange;
+    transition: .4s;
+}
+.bottom{
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.bottom p{
+    color: #eee;
+    letter-spacing: 2px;
+    font: size 15px;
+}
+
+@media screen and (max-width: 930px) {
+   nav .hamb{
+    display: initial;
+   } 
+   .click{
+    top: 46px;
+   }
+   .click span{
+    position: relative;
+    margin-top: 12px;
+   }
+   .click span:first-child{
+    transform: rotate(-40deg);
+   }
+   .click span:nth-child(2){
+    opacity: 0;
+    margin: 0;
+   }
+   .click span:last-child{
+    transform: rotate(40deg);
+    top: 0;
+   }
+   nav .nav-list{
+    position:absolute;
+    top: 90px;
+    right: -65%;
+    bottom: 0;
+    width: 60px;
+    height: 50%;
+    background: black;
+    z-index: 2;
+    padding: none;
+    transition: .3s right;
+    border-radius: 10px;
+   }
+   nav .nav-list li{
+    display: block;
+   }
+  nav .nav-list li a{
+   display: block;
+   text-align:center ; 
+   font-size: 18px;
+   font-weight: 400;
+   margin-left: 0;
+   margin-bottom: 40px;
+  } 
+  nav .nav-list li.btn a{
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    left: 20%;
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+  nav .nav-list.open{
+    right: 0;
+  }
+}
+
+
+
+
+
+
+
+
